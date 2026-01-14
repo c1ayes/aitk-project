@@ -120,3 +120,36 @@ if (form && to_do && to_do_list){
         }
     })
 }
+
+//-----------------------------
+//form-validation
+
+function validateEmail(email) {
+  const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return re.test(email);
+}
+
+
+const letter_form = document.querySelector(".letter-form");
+const errorMsg = document.querySelector("#errorMsg")
+if (letter_form && errorMsg){
+    letter_form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const name = document.querySelector("#name").value.trim();
+        const email = document.querySelector("#email").value.trim();
+        const agree = document.querySelector("input[name='agree']:checked").value;
+        if (name === ""){
+            errorMsg.textContent = "Ошибка, неправильно введено";
+            return;
+        }
+        if (email === "" || !validateEmail(email)){
+            errorMsg.textContent = "Ошибка, неправильно введенная почта";
+            return;   
+        }
+        if (agree !== "yes"){
+            errorMsg.textContent = "Отказ от условий - отказ от формы";
+            return;
+        }
+        errorMsg.textContent = "Все правильно! Форма отправлена";
+    })
+}
