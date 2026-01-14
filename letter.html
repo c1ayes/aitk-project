@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "style.css">
+    <title>Письмо</title>
+</head>
+
+<body>
+    <header>
+        <h1>Письмо</h1>
+        <p>Сколько раз посетили эту страницу: <span id = "visited">0</span></p>
+        <div class = "container-theme">
+            <button class = "theme" value = "light">☀️</button>
+            <button class = "theme" value = "dark" id = "dark">🌑</button>
+        </div>
+    </header>
+    <nav>
+        <a href="index.html">Обо мне</a>
+        <a href="projects.html">Проекты</a>
+        <a href="letter.html">Письмо</a>
+        <a href="age.html">Проверка возраста</a>
+
+    </nav>
+    <hr>
+    <main class = "main-letter">
+        <form method="post" class = "letter-form">
+            <div class = "name">
+                <label for="name">Имя</label> 
+                <input type="text" name="name" id="name"> 
+            </div>
+
+            <div class = "email">
+                <label for="email">Почта</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class = "text">
+                <label for="text">Пожелание Даниялу</label>
+                <textarea name="text" id="text" rows="4" cols="30"></textarea>
+            </div>
+            <div class = "country">
+                <label for="country">Страна</label>
+                <select name="country" id="country">
+                    <option value="kazakhstan">Казахстан</option>
+                    <option value="russia">Россия</option>
+                    <option value="usa">США</option>
+                </select>
+            </div>
+            <div class = "agree">
+                <p><b>Прочел условия</b></p>
+                <label for="yes">Да</label>
+                <input type="radio" name="agree" id="yes" value="yes">
+                <label for="no">Нет</label>
+                <input type="radio" name="agree" id="no" value="no">
+            </div>
+            <button type="submit">Отправить</button>
+            <button type="reset">Очистить</button>
+        </form>
+    </main>
+    <footer>  
+        <aside>
+            <h3 id="contacts">Мои контакты</h3>
+            <ul class="social-media">
+                <li><a href="https://www.youtube.com/@clayes7780" target="_blank">Ютуб</a></li>
+                <li><p>Телефон: 87718632280</p></li>
+                <li><p>Почта: daniyal.dauletulty@gmail.com</p></li>
+            </ul>
+        </aside>
+        <p>&copy; 2025 MySite</p>
+    </footer>
+    <script src = "script.js"></script>
+</body>
+</html>

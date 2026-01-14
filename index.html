@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "style.css">
+    <title>Обо мне</title>
+</head>
+<body>
+    <header>
+        <h1>Даниял</h1>
+        <img src="images/clayes.png" alt="avatar" width="100" height="100">
+        <p>Сколько раз посетили эту страницу: <span id = "visited">0</span></p>
+        <div class = "container-theme">
+            <button class = "theme" value = "light">☀️</button>
+            <button class = "theme" value = "dark" id = "dark">🌑</button>
+        </div>
+    </header>
+    <nav>
+        <a href="index.html">Обо мне</a>
+        <a href="projects.html">Проекты</a>
+        <a href="letter.html">Письмо</a>
+        <a href="age.html">Проверка возраста</a>
+    </nav>
+    <hr>
+    <main>
+        <section class="about">
+            <div class="bio">
+                <h2 id = "about_me">Обо мне</h2>
+                <p>
+                    Ученик 10 класса, КГУОШ 117, с хорошей успеваемостью, учит программирование &hearts;
+                </p>
+                <p>
+                    Много учится, старается, вообще красавчик
+                </p>
+                <p>
+                    Из отрицательных сторон можно отметить лень и прокрастаницию.
+                </p>
+            </div>
+            <section class="interests-goals">
+                <h2>Интересы и цели</h2>
+                <div class="interests">
+                    <ul>
+                        <li>Программирование</li>
+                        <li>Плавание</li>
+                        <li>Видеоигры</li>
+                    </ul>
+                </div>
+                <div class="goals">
+                    <ol>
+                        <li>Победить хакатон &check;</li>
+                        <li>Открыть стартап &check;</li>
+                        <li>Дойти до красного рейтинга на CF &check;</li>
+                        <li><strong>Поступить заграницу</strong> &check;</li>
+                    </ol>
+                </div>
+            </section>
+        </section>
+        <section class="schedule">
+            <h2>Расписание предметов</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Предмет</th>
+                        <th>Понедельник</th>
+                        <th>Вторник</th>
+                        <th>Среда</th>
+                        <th>Четверг</th>
+                        <th>Пятница</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Математика</td>
+                        <td>Есть</td>
+                        <td>Есть</td>
+                        <td>Есть</td>
+                        <td>Есть</td>
+                        <td>Нет</td>
+                    </tr>
+                    <tr>
+                        <td>Информатика</td>
+                        <td>Нет</td>
+                        <td>Есть</td>
+                        <td>Нет</td>
+                        <td>Нет</td>
+                        <td>Есть</td>
+                    </tr>
+                    <tr>
+                        <td>Основы права</td>
+                        <td colspan="5">Урока нет</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        
+        <aside>
+            <h3 id="contacts">Мои контакты</h3>
+            <ul class="social-media">
+                <li><a href="https://www.youtube.com/@clayes7780" target="_blank">Ютуб</a></li>
+                <li><p>Телефон: 87718632280</p></li>
+                <li><p>Почта: daniyal.dauletulty@gmail.com</p></li>
+            </ul>
+        </aside>
+        <p>&copy; 2025 MySite</p>
+    </footer>
+    <script src = "script.js"></script>
+</body>
+</html>

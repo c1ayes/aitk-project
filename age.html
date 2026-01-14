@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Счетчик</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Проверка возраста</h1>
+            <div class = "container-theme">
+                <button class = "theme" value = "light">☀️</button>
+                <button class = "theme" value = "dark" id = "dark">🌑</button>
+            </div>
+            <p>Сколько раз посетили эту страницу: <span id = "visited">0</span></p>
+        </header>
+        <nav>
+            <a href="index.html">Обо мне</a>
+            <a href="projects.html">Проекты</a>
+            <a href="letter.html">Письмо</a>
+            <a href="age.html">Проверка возраста</a>
+        </nav>
+        <hr>
+        <main>
+            <div class="age-div">
+                <input type="number" id = "age" placeholder = "Введите возраст" class="age">
+                <p id="res" class="age"></p>
+                <button class = "counter age">Нажми меня</button>
+                <p class = "count age"></p>
+                <form action="" id = 'my-form'>
+                    <input type="text" class = "to-do age" placeholder = "Напишите свои планы">
+                    <ol class = "to-do-list age"></ol>
+                </form>
+            </div>
+        </main>
+        
+        <footer>
+
+        <aside>
+            <h3 id="contacts">Мои контакты</h3>
+            <ul class="social-media">
+                <li><a href="https://www.youtube.com/@clayes7780" target="_blank">Ютуб</a></li>
+                <li><p>Телефон: 87718632280</p></li>
+                <li><p>Почта: daniyal.dauletulty@gmail.com</p></li>
+            </ul>
+        </aside>
+        <p>&copy; 2025 MySite</p>
+    </footer>
+    <script src="script.js"></script>
+    </body>
+</html>
